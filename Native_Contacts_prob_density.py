@@ -33,11 +33,12 @@ def plot_hist_1(data, figname, num_iterations, color_index, bins_):
             bootstrap_sample = np.random.choice(data[i], size=int(0.8*len(data[i])), replace=True)
             nSD, binsSD = np.histogram(bootstrap_sample, bins=bins_, density=True)
             bootstrap_results[j, :] = nSD
-        maxy = np.max(bootstrap_results,axis=0)
-        miny = np.min(bootstrap_results,axis=0)
-        meany = np.mean(bootstrap_results,axis=0)
-        axs.plot(binsSD[0:-1], meany, linewidth=3, c=colors[color_index][i])
-        axs.fill_between(binsSD[0:-1], miny, maxy, alpha=0.3, color=colors[color_index][i])
+        mean_y = np.mean(bootstrap_results, axis=0)
+        std_y = np.std(bootstrap_results, axis=0)
+        upper_y = mean_y + std_y
+        lower_y = mean_y - std_y
+        axs.plot(binsSD[0:-1], mean_y, linewidth=3, c=colors[color_index][i])
+        axs.fill_between(binsSD[0:-1],  lower_y, upper_y, alpha=0.3, color=colors[color_index][i])
     axs.set_xlim([0, 1])
     axs.set_ylim([0, 4])
     axs.set_xticks([0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0])
@@ -63,11 +64,12 @@ def plot_hist_2(data, figname, num_iterations, color_index, bins_):
             bootstrap_sample = np.random.choice(data[i], size=int(0.8*len(data[i])), replace=True)
             nSD, binsSD = np.histogram(bootstrap_sample, bins=bins_, density=True)
             bootstrap_results[j, :] = nSD
-        maxy = np.max(bootstrap_results,axis=0)
-        miny = np.min(bootstrap_results,axis=0)
-        meany = np.mean(bootstrap_results,axis=0)
-        axs.plot(binsSD[0:-1], meany, linewidth=3, c=colors[color_index][i])
-        axs.fill_between(binsSD[0:-1], miny, maxy, alpha=0.3, color=colors[color_index][i])
+        mean_y = np.mean(bootstrap_results, axis=0)
+        std_y = np.std(bootstrap_results, axis=0)
+        upper_y = mean_y + std_y
+        lower_y = mean_y - std_y
+        axs.plot(binsSD[0:-1], mean_y, linewidth=3, c=colors[color_index][i])
+        axs.fill_between(binsSD[0:-1],  lower_y, upper_y, alpha=0.3, color=colors[color_index][i])
     axs.set_xlim([0, 1])
     axs.set_ylim([0, 5])
     axs.set_xticks([0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0])
