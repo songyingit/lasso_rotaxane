@@ -1,4 +1,4 @@
-##	Insights into rotaxane formation enables cyclase engineering for lasso peptide diversification
+##	Substrate interactions guide cyclase engineering and lasso peptide diversification
 
 This repository contains Molecular Dynamics (MD) data and the python code used to generate calculations and figures in the manuscript.
 
