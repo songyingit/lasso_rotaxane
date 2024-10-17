@@ -1,10 +1,6 @@
 #	Substrate interactions guide cyclase engineering and lasso peptide diversification
 
-This repository contains code to analyze Molecular Dynamics (MD) simulations data in the manuscript [Substrate interactions guide cyclase engineering and lasso peptide diversification](https://www.nature.com/articles/s41589-024-01727-w). 
-
-## Description of the data and file structure
-
-We conducted Molecular Dynamics (MD) simulations for five different FusA (Fusilassin, peptide) : FusC (Fusilassin cyclase, enzyme) complex systems. The system names and their explanations are as follows:
+This repository contains code to analyze Molecular Dynamics (MD) simulations data in the manuscript [Substrate interactions guide cyclase engineering and lasso peptide diversification](https://www.nature.com/articles/s41589-024-01727-w). In this paper, we conducted Molecular Dynamics (MD) simulations for five different FusA (Fusilassin, peptide) : FusC (Fusilassin cyclase, enzyme) complex systems. The system names and their explanations are as follows:
 
 * **FusA_FusC** represents FusA wildtype : FusC wildtype
 * **FusA_I11R_FusC** represents FusA I11R : FusC wildtype (I11R indicates that residue 11 I was mutated to R, same for below)
