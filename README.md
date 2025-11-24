@@ -13,9 +13,9 @@
 ## Table of Contents
 
 - [Abstract](#abstract)
-- [System Nomenclature](#system-nomenclature)
 - [Software Requirements](#software-requirements)
 - [MD Simulation Data](#md-simulation-data)
+  - [System Nomenclature](#system-nomenclature)
   - [Trajectory Files](#md-simulation-trajectories)
   - [Pairwise Residue Distances](#pairwise-residue-side-chain-heavy-distances)
 - [Analysis](#analysis)
@@ -33,7 +33,17 @@ This repository contains molecular dynamics (MD) simulation data and analysis co
 
 ---
 
-## System Nomenclature
+## Software Requirements
+
+- **Python:** 3.7+
+- **OpenMM:** 7.6.0
+- **MDTraj:** 1.9.9
+
+---
+
+## MD Simulation Data
+
+### System Nomenclature
 
 Five systems were simulated, each representing different lasso peptide-enzyme variant combinations:
 
@@ -46,17 +56,6 @@ Five systems were simulated, each representing different lasso peptide-enzyme va
 | **FusA_V13R_FusC_R321G** | FusA V13R : FusC R321G | RUN4 |
 
 ---
-
-
-## Software Requirements
-
-- **Python:** 3.7+
-- **OpenMM:** 7.6.0
-- **MDTraj:** 1.9.9
-
----
-
-## MD Simulation Data
 
 ### MD Simulation Trajectories
 
