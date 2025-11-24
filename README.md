@@ -21,8 +21,8 @@
 - [Analysis](#analysis)
   - [Fraction of Native Contacts (Q)](#fraction-of-native-contacts-q)
   - [Contact Probability](#contact-probability)
-  - [Q Probability Density](#fq-probability-density)
-  - [Peptide Residue Contributions](peptide-residue-contributions-to-contact-probability)
+  - [Q Probability Density](#q-probability-density)
+  - [Peptide Residue Contributions](#peptide-residue-contributions-to-contact-probability)
 - [Citation](#citation)
 
 ---
