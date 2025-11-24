@@ -1,12 +1,11 @@
 # Substrate Interactions Guide Cyclase Engineering and Lasso Peptide Diversification
 
 <p align="center">
-  <img src="./MD_graphical_abstract.png" alt="Graphical Abstract" width="600"/>
+  <img src="./MD_graphical_abstract.png" alt="Graphical Abstract"/>
 </p>
 
-**Paper:** [Nature Chemical Biology (2024)](https://www.nature.com/articles/s41589-024-01727-w)  
-**Data Repository:** [Zenodo/Figshare Link](https://doi.org/10.5061/dryad.fttdz092h)  
-**Code Repository:** [https://github.com/ShuklaGroup/lasso_rotaxane/](https://github.com/ShuklaGroup/lasso_rotaxane/)
+**Paper:** [Substrate Interactions Guide Cyclase Engineering and Lasso Peptide Diversification, Nature Chemical Biology (2024)](https://www.nature.com/articles/s41589-024-01727-w)  
+**Data Repository:** [Dryad Link](https://doi.org/10.5061/dryad.fttdz092h)  
 
 ---
 
