@@ -19,7 +19,7 @@
   - [Trajectory Files](#md-simulation-trajectories)
   - [Pairwise Residue Distances](#pairwise-residue-side-chain-heavy-distances)
 - [Analysis](#analysis)
-  - [Fraction of Native Contacts (Q)](fraction-of-native-contacts-q)
+  - [Fraction of Native Contacts (Q)](fraction-of-native-contacts)
   - [Contact Probability](contact-probability)
   - [Q Probability Density](fraction-of-native-contacts-q-probability-density)
   - [Peptide Residue Contributions](peptide-residue-contributions-to-contact-probability)
@@ -101,9 +101,9 @@ Pairwise side chain heavy atom distances between FusA and FusC were calculated t
 ---
 ## Analysis
 
-### Fraction of Native Contacts (Q)
+### Fraction of Native Contacts
 
-The fraction of native contacts quantifies peptide pre-folding and structural stability.
+The fraction of native contacts (Q) quantifies peptide pre-folding and structural stability.
 
 **Data Files:**
 
@@ -129,9 +129,9 @@ Contact probability represents the likelihood of residue pairs exhibiting side c
 
 
 
-### Fraction of Native Contacts (Q) Probability Density
+### Fraction of Native Contacts Probability Density
 
-Q probability density distributions characterize the conformational landscape of the peptide substrate.
+Fraction of Native Contacts (Q) probability density distributions characterize the conformational landscape of the peptide substrate.
 
 **Data Files:**
 
