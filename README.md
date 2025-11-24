@@ -4,8 +4,8 @@
   <img src="./MD_graphical_abstract.png" alt="Graphical Abstract"/>
 </p>
 
-**Paper:** [Substrate Interactions Guide Cyclase Engineering and Lasso Peptide Diversification, Nature Chemical Biology (2024)](https://www.nature.com/articles/s41589-024-01727-w)  
-**Data Repository:** [Dryad Link](https://doi.org/10.5061/dryad.fttdz092h)  
+[Paper](https://www.nature.com/articles/s41589-024-01727-w)  
+[Data Repository](https://doi.org/10.5061/dryad.fttdz092h)  
 
 ---
 
@@ -13,29 +13,28 @@
 
 - [Abstract](#abstract)
 - [System Nomenclature](#system-nomenclature)
+- [Software Requirements](#software-requirements)
 - [MD Simulation Data](#md-simulation-data)
-  - [Trajectory Files](#1-md-simulation-trajectories)
-  - [Pairwise Residue Distances](#2-pairwise-residue-side-chain-heavy-distances)
-  - [Fraction of Native Contacts (Q)](#3-fraction-of-native-contacts-q)
-  - [Contact Probability](#4-contact-probability)
-  - [Q Probability Density](#5-fraction-of-native-contacts-q-probability-density)
-  - [Peptide Residue Contributions](#6-peptide-residue-contributions-to-contact-probability)
-- [Analysis Code](#analysis-code)
+  - [Trajectory Files](#md-simulation-trajectories)
+  - [Pairwise Residue Distances](#pairwise-residue-side-chain-heavy-distances)
+- [Analysis](#analysis)
+  - [Fraction of Native Contacts (Q)](fraction-of-native-contacts-q)
+  - [Contact Probability](contact-probability)
+  - [Q Probability Density](fraction-of-native-contacts-q-probability-density)
+  - [Peptide Residue Contributions](peptide-residue-contributions-to-contact-probability)
 - [Citation](#citation)
 
 ---
 
 ## Abstract
 
-This repository contains molecular dynamics (MD) simulation data and analysis code for the manuscript *"Substrate interactions guide cyclase engineering and lasso peptide diversification"* published in Nature Chemical Biology. We performed extensive MD simulations (50 μs per system) on five different FusA (Fusilassin peptide) : FusC (Fusilassin cyclase) complex systems to investigate substrate-enzyme interactions that guide cyclase engineering and enable lasso peptide diversification.
-
-The simulations were performed using OpenMM 7.6.0 on the Folding@home distributed computing platform with the CHARMM36m force field. Analysis was conducted using MDTraj 1.9.9 to extract key structural and interaction features.
+This repository contains molecular dynamics (MD) simulation data and analysis code for the manuscript [Substrate Interactions Guide Cyclase Engineering and Lasso Peptide Diversification](https://www.nature.com/articles/s41589-024-01727-w) published in Nature Chemical Biology. We performed extensive MD simulations (50 μs per system) on five different FusA (Lasso Peptide Fusilassin) : FusC (Fusilassin Cyclase) complex systems to investigate substrate-enzyme interactions that guide cyclase engineering and enable lasso peptide diversification.
 
 ---
 
 ## System Nomenclature
 
-Five systems were simulated, each representing different peptide-enzyme variant combinations:
+Five systems were simulated, each representing different lasso peptide-enzyme variant combinations:
 
 | System Name | Description | Run Index |
 |-------------|-------------|-----------|
@@ -45,13 +44,20 @@ Five systems were simulated, each representing different peptide-enzyme variant 
 | **FusA_V13R_FusC** | FusA V13R : FusC wildtype | RUN3 |
 | **FusA_V13R_FusC_R321G** | FusA V13R : FusC R321G | RUN4 |
 
-*Note: Mutation notation indicates position and amino acid change (e.g., I11R = Isoleucine at position 11 mutated to Arginine)*
+---
+
+
+## Software Requirements
+
+- **Python:** 3.7+
+- **OpenMM:** 7.6.0
+- **MDTraj:** 1.9.9
 
 ---
 
 ## MD Simulation Data
 
-### 1. MD Simulation Trajectories
+### MD Simulation Trajectories
 
 **Simulation Details:**
 - **Software:** OpenMM 7.6.0
@@ -77,7 +83,7 @@ Five systems were simulated, each representing different peptide-enzyme variant 
 
 ---
 
-### 2. Pairwise Residue Side Chain Heavy Distances
+### Pairwise Residue Side Chain Heavy Distances
 
 Pairwise side chain heavy atom distances between FusA and FusC were calculated to characterize substrate-enzyme interactions.
 
@@ -91,18 +97,12 @@ Pairwise side chain heavy atom distances between FusA and FusC were calculated t
 |------|------|-------------|
 | `FusA_FusC_res_dist.tar.gz` | 17.7 GB | Distance matrices for all 5 systems |
 
-**Archive Contents:**
-- `FusA_FusC_res_dist.pkl`
-- `FusA_I11R_FusC_res_dist.pkl`
-- `FusA_I11R_FusC_R321G_res_dist.pkl`
-- `FusA_V13R_FusC_res_dist.pkl`
-- `FusA_V13R_FusC_R321G_res_dist.pkl`
-
 **Analysis Code:** [`Pairwise_residue_distances.py`](https://github.com/ShuklaGroup/lasso_rotaxane/blob/main/Pairwise_residue_distances.py)
 
 ---
+## Analysis
 
-### 3. Fraction of Native Contacts (Q)
+### Fraction of Native Contacts (Q)
 
 The fraction of native contacts quantifies peptide pre-folding and structural stability.
 
@@ -112,18 +112,11 @@ The fraction of native contacts quantifies peptide pre-folding and structural st
 |------|------|-------------|
 | `FusA_FusC_Q.tar.gz` | 8.4 MB | Q values for all systems and frames |
 
-**Archive Contents:**
-- `FusA_FusC_Q.pkl`
-- `FusA_I11R_FusC_Q.pkl`
-- `FusA_I11R_FusC_R321G_Q.pkl`
-- `FusA_V13R_FusC_Q.pkl`
-- `FusA_V13R_FusC_R321G_Q.pkl`
-
 **Analysis Code:** [`Native_Contacts.py`](https://github.com/ShuklaGroup/lasso_rotaxane/blob/main/Native_Contacts.py)
 
 ---
 
-### 4. Contact Probability
+### Contact Probability
 
 Contact probability represents the likelihood of residue pairs exhibiting side chain heavy atom distances < 5 Å in frames where peptide Q > 0.8.
 
@@ -141,18 +134,11 @@ Contact probability represents the likelihood of residue pairs exhibiting side c
 |------|------|-------------|
 | `FusA_FusC_contact_prob.tar.gz` | 18.8 kB | Contact probability matrices for all systems |
 
-**Archive Contents:**
-- `FusA_FusC_contact_prob.npy`
-- `FusA_I11R_FusC_contact_prob.npy`
-- `FusA_I11R_FusC_R321G_contact_prob.npy`
-- `FusA_V13R_FusC_contact_prob.npy`
-- `FusA_V13R_FusC_R321G_contact_prob.npy`
-
 **Analysis Code:** [`Contact_probability_heatmap.py`](https://github.com/ShuklaGroup/lasso_rotaxane/blob/main/Contact_probability_heatmap.py)
 
 ---
 
-### 5. Fraction of Native Contacts (Q) Probability Density
+### Fraction of Native Contacts (Q) Probability Density
 
 Q probability density distributions characterize the conformational landscape of the peptide substrate.
 
@@ -166,18 +152,11 @@ Q probability density distributions characterize the conformational landscape of
 |------|------|-------------|
 | `FusA_FusC_Q_prob_density.tar.gz` | 13.9 kB | Probability density data (bins, mean, SD) |
 
-**Archive Contents:**
-- `FusA_FusC_Q_prob_density.pkl`
-- `FusA_I11R_FusC_Q_prob_density.pkl`
-- `FusA_I11R_FusC_R321G_Q_prob_density.pkl`
-- `FusA_V13R_FusC_Q_prob_density.pkl`
-- `FusA_V13R_FusC_R321G_Q_prob_density.pkl`
-
 **Analysis Code:** [`Native_Contacts_prob_density.py`](https://github.com/ShuklaGroup/lasso_rotaxane/blob/main/Native_Contacts_prob_density.py)
 
 ---
 
-### 6. Peptide Residue Contributions to Contact Probability
+### Peptide Residue Contributions to Contact Probability
 
 Individual FusA residue contributions were calculated by summing contact probabilities with all selected FusC residues and normalizing.
 
@@ -190,38 +169,7 @@ Individual FusA residue contributions were calculated by summing contact probabi
 |------|------|-------------|
 | `FusA_FusC_pep_res_contributions.tar.gz` | 1.0 kB | Contribution values for all systems |
 
-**Archive Contents:**
-- `FusA_FusC_pep_res_contr.npy`
-- `FusA_I11R_FusC_pep_res_contr.npy`
-- `FusA_I11R_FusC_R321G_pep_res_contr.npy`
-- `FusA_V13R_FusC_pep_res_contr.npy`
-- `FusA_V13R_FusC_R321G_pep_res_contr.npy`
-
 **Analysis Code:** [`Contact_probability_contribution.py`](https://github.com/ShuklaGroup/lasso_rotaxane/blob/main/Contact_probability_contribution.py)
-
----
-
-## Analysis Code
-
-All analysis scripts are available in the main repository: [https://github.com/ShuklaGroup/lasso_rotaxane/](https://github.com/ShuklaGroup/lasso_rotaxane/)
-
-### Available Scripts
-
-| Script | Purpose | Input | Output |
-|--------|---------|-------|--------|
-| `Pairwise_residue_distances.py` | Calculate side chain heavy atom distances | Trajectories (.xtc, .parm7) | Distance matrices (.pkl) |
-| `Native_Contacts.py` | Compute fraction of native contacts | Trajectories (.xtc, .parm7) | Q values (.pkl) |
-| `Contact_probability_heatmap.py` | Calculate contact probabilities | Distance matrices + Q values | Contact prob. matrices (.npy) |
-| `Native_Contacts_prob_density.py` | Generate Q probability distributions | Q values (.pkl) | Density data (.pkl) |
-| `Contact_probability_contribution.py` | Compute residue contributions | Contact prob. matrices | Contribution values (.npy) |
-
-### Software Requirements
-
-- **Python:** 3.7+
-- **OpenMM:** 7.6.0
-- **MDTraj:** 1.9.9
-- **NumPy:** Latest stable version
-- **Matplotlib:** For visualization (optional)
 
 ---
 
@@ -230,12 +178,19 @@ All analysis scripts are available in the main repository: [https://github.com/S
 If you use this data or code in your research, please cite:
 
 ```bibtex
-@article{substrate_cyclase_2024,
-  title={Substrate interactions guide cyclase engineering and lasso peptide diversification},
-  journal={Nature Chemical Biology},
-  year={2024},
-  doi={10.1038/s41589-024-01727-w},
-  url={https://www.nature.com/articles/s41589-024-01727-w}
+@article{Barrett2024,
+  title = {Substrate interactions guide cyclase engineering and lasso peptide diversification},
+  volume = {21},
+  ISSN = {1552-4469},
+  url = {http://dx.doi.org/10.1038/s41589-024-01727-w},
+  DOI = {10.1038/s41589-024-01727-w},
+  number = {3},
+  journal = {Nature Chemical Biology},
+  publisher = {Springer Science and Business Media LLC},
+  author = {Barrett,  Susanna E. and Yin,  Song and Jordan,  Peter and Brunson,  John K. and Gordon-Nunez,  Jessica and Costa Machado da Cruz,  Gabriella and Rosario,  Christopher and Okada,  Bethany K. and Anderson,  Kelsey and Pires,  Thomas A. and Wang,  Ruoyang and Shukla,  Diwakar and Burk,  Mark J. and Mitchell,  Douglas A.},
+  year = {2024},
+  month = sep,
+  pages = {412–419}
 }
 ```
 
