@@ -114,7 +114,7 @@ The fraction of native contacts quantifies peptide pre-folding and structural st
 
 **Analysis Code:** [`Native_Contacts.py`](https://github.com/ShuklaGroup/lasso_rotaxane/blob/main/Native_Contacts.py)
 
----
+
 
 ### Contact Probability
 
@@ -128,7 +128,7 @@ Contact probability represents the likelihood of residue pairs exhibiting side c
 
 **Analysis Code:** [`Contact_probability_heatmap.py`](https://github.com/ShuklaGroup/lasso_rotaxane/blob/main/Contact_probability_heatmap.py)
 
----
+
 
 ### Fraction of Native Contacts (Q) Probability Density
 
@@ -142,7 +142,6 @@ Q probability density distributions characterize the conformational landscape of
 
 **Analysis Code:** [`Native_Contacts_prob_density.py`](https://github.com/ShuklaGroup/lasso_rotaxane/blob/main/Native_Contacts_prob_density.py)
 
----
 
 ### Peptide Residue Contributions to Contact Probability
 
