@@ -55,7 +55,6 @@ Five systems were simulated, each representing different lasso peptide-enzyme va
 | **FusA_V13R_FusC** | FusA V13R : FusC wildtype | RUN3 |
 | **FusA_V13R_FusC_R321G** | FusA V13R : FusC R321G | RUN4 |
 
----
 
 ### MD Simulation Trajectories
 
@@ -81,7 +80,7 @@ Five systems were simulated, each representing different lasso peptide-enzyme va
 - 1 topology file (`.parm7`) - CHARMM36m force field parameters
 - 100 trajectory files (`.xtc`) - Named as `RUN[index]_CLONE[index]_traj.xtc`
 
----
+
 
 ### Pairwise Residue Side Chain Heavy Distances
 
