@@ -178,9 +178,3 @@ If you use this data or code in your research, please cite:
 ```
 
 ---
-
-## License
-
-*Add your license information here (e.g., MIT, GPL, CC-BY)*
-
----
