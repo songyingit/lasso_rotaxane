@@ -19,9 +19,9 @@
   - [Trajectory Files](#md-simulation-trajectories)
   - [Pairwise Residue Distances](#pairwise-residue-side-chain-heavy-distances)
 - [Analysis](#analysis)
-  - [Fraction of Native Contacts (Q)](fraction-of-native-contacts)
-  - [Contact Probability](contact-probability)
-  - [Q Probability Density](fraction-of-native-contacts-q-probability-density)
+  - [Fraction of Native Contacts (Q)](#fraction-of-native-contacts)
+  - [Contact Probability](#contact-probability)
+  - [Q Probability Density](#fraction-of-native-contacts-q-probability-density)
   - [Peptide Residue Contributions](peptide-residue-contributions-to-contact-probability)
 - [Citation](#citation)
 
