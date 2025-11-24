@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <a href="https://www.nature.com/articles/s41589-024-01727-w">Paper</a> | <a href="https://doi.org/10.5061/dryad.fttdz092h">Data Repository</a>
+  <a href="https://www.nature.com/articles/s41589-024-01727-w">Nature Chemical Biology Paper</a> | <a href="https://doi.org/10.5061/dryad.fttdz092h">Data Repository</a>
 </p>
 
 ---
@@ -29,7 +29,7 @@
 
 ## Abstract
 
-This repository contains molecular dynamics (MD) simulation data and analysis code for the manuscript [Substrate Interactions Guide Cyclase Engineering and Lasso Peptide Diversification](https://www.nature.com/articles/s41589-024-01727-w) published in Nature Chemical Biology. We performed extensive MD simulations (50 μs per system) on five different FusA (Lasso Peptide Fusilassin) : FusC (Fusilassin Cyclase) complex systems to investigate substrate-enzyme interactions that guide cyclase engineering and enable lasso peptide diversification.
+This repository contains molecular dynamics (MD) simulation data and analysis code for the manuscript [Substrate Interactions Guide Cyclase Engineering and Lasso Peptide Diversification](https://www.nature.com/articles/s41589-024-01727-w) published in *Nature Chemical Biology*. We performed extensive MD simulations (50 μs per system) on five different FusA (Lasso Peptide Fusilassin) : FusC (Fusilassin Cyclase) complex systems to investigate substrate-enzyme interactions that guide cyclase engineering and enable lasso peptide diversification.
 
 ---
 
