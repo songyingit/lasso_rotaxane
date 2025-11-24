@@ -120,14 +120,6 @@ The fraction of native contacts quantifies peptide pre-folding and structural st
 
 Contact probability represents the likelihood of residue pairs exhibiting side chain heavy atom distances < 5 Å in frames where peptide Q > 0.8.
 
-**Manuscript Figures:**
-- **Fig. 2c, d, e:** FusA_FusC system
-- **Extended Data Fig. 5a:** FusA_FusC system
-- **Extended Data Fig. 5b:** FusA_I11R_FusC system
-- **Extended Data Fig. 5c:** FusA_I11R_FusC_R321G system
-- **Extended Data Fig. 5d:** FusA_V13R_FusC system
-- **Extended Data Fig. 5e:** FusA_V13R_FusC_R321G system
-
 **Data Files:**
 
 | File | Size | Description |
@@ -142,10 +134,6 @@ Contact probability represents the likelihood of residue pairs exhibiting side c
 
 Q probability density distributions characterize the conformational landscape of the peptide substrate.
 
-**Manuscript Figures:**
-- **Fig. 3c:** FusA_I11R_FusC_R321G system
-- **Extended Data Fig. 6d:** FusA_V13R_FusC_R321G system
-
 **Data Files:**
 
 | File | Size | Description |
@@ -159,9 +147,6 @@ Q probability density distributions characterize the conformational landscape of
 ### Peptide Residue Contributions to Contact Probability
 
 Individual FusA residue contributions were calculated by summing contact probabilities with all selected FusC residues and normalizing.
-
-**Manuscript Figures:**
-- **Supplementary Fig. 10:** All systems
 
 **Data Files:**
 
