@@ -4,8 +4,9 @@
   <img src="./MD_graphical_abstract.png" alt="Graphical Abstract"/>
 </p>
 
-[Paper](https://www.nature.com/articles/s41589-024-01727-w)  
-[Data Repository](https://doi.org/10.5061/dryad.fttdz092h)  
+<p align="center">
+  <a href="https://www.nature.com/articles/s41589-024-01727-w">Paper</a> | <a href="https://doi.org/10.5061/dryad.fttdz092h">Data Repository</a>
+</p>
 
 ---
 
